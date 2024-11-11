@@ -281,3 +281,371 @@ main {
 .button-demo > button:nth-child(4n) {
   margin-right: 0; /* No extra margin on the last button in a row */
 }
+
+/* General form styling */
+/* General form styling */
+.form-demo {
+  max-width: 800px; /* Wider container */
+  margin: 30px auto; /* Centered with more spacing */
+  padding: 25px;
+  border: 1px solid #e0e0e0; /* Subtle border */
+  border-radius: 10px;
+  background-color: #fff; /* Plain white background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  font-family: Arial, sans-serif;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px; /* Slightly larger text */
+  font-weight: normal; /* Subtler font weight */
+  margin-bottom: 8px;
+  color: #555; /* Neutral, softer color */
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd; /* Lighter border for inputs */
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Subtle background */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  color: #333; /* Neutral text color */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(60, 10, 10, 0.5); /* Matching shadow */
+  outline: none;
+}
+
+textarea {
+  resize: vertical; /* Only allow vertical resizing */
+}
+
+/* Radio buttons and checkboxes */
+/* General alignment for radio and checkbox groups */
+
+/* General form group styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Submit button */
+.btn {
+  font-size: 16px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft button shadow */
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #5b0e0e; /* Darker hover state */
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+}
+
+/* Adjust form layout for beauty */
+.form-demo .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* General Table Container */
+.table-demo {
+  margin: 20px 0;
+  overflow-x: auto; /* Ensures table is scrollable on smaller screens */
+}
+
+/* Table Styling */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-color: #fff; /* Matches your form and section styling */
+  border: 1px solid #ddd; /* Subtle border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds slight depth */
+}
+
+/* Header Styling */
+.styled-table thead tr {
+  background-color: var(--primary-color); /* Use primary color for the header */
+  color: #fff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px; /* Adds padding for better readability */
+  border: 1px solid #ddd; /* Borders for a clean table grid */
+}
+
+/* Row Hover Effect */
+.styled-table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1; /* Subtle hover effect */
+}
+
+/* Highlight Active Row */
+.styled-table tbody tr.active-row {
+  font-weight: bold; /* Highlights active row text */
+  background-color: #f4f4f4;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .styled-table th,
+  .styled-table td {
+    padding: 10px; /* Adjusts padding for smaller screens */
+  }
+}
+
+/* General List Demo Styling */
+.list-demo {
+  margin-top: 20px;
+}
+
+.list-group {
+  margin-bottom: 20px;
+}
+
+/* Styled List (Unordered & Ordered) */
+.styled-list {
+  list-style-position: inside; /* Aligns bullet points inside the content area */
+  margin: 10px 0;
+  padding: 0;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.styled-list ul {
+  list-style-type: circle; /* Nested list bullets */
+  margin-left: 20px;
+}
+
+.styled-list ol {
+  list-style-type: decimal; /* Default ordered list style */
+  margin-left: 20px;
+}
+
+/* Description List Styling */
+.styled-description-list {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.styled-description-list dt {
+  font-weight: bold;
+  color: var(--primary-color); /* Highlighted term */
+}
+
+.styled-description-list dd {
+  margin-left: 20px; /* Indented definition */
+  color: #555;
+}
+
+/* General Styles for Lists */
+.styled-list li,
+.styled-description-list dt,
+.styled-description-list dd {
+  transition: color 0.3s ease;
+}
+
+.styled-list li:hover,
+.styled-description-list dt:hover,
+.styled-description-list dd:hover {
+  color: var(--primary-color); /* Highlighted on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .styled-list,
+  .styled-description-list {
+    font-size: 14px; /* Smaller font for mobile devices */
+  }
+}
+
+/* General Styles for Breadcrumbs */
+
+.breadcrumb-group:is:first-child {
+  margin-top: 20px;
+}
+.breadcrumb {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.breadcrumb-group h3 {
+  margin: 0;
+  font-weight: 500;
+  color: #333;
+}
+
+.breadcrumb-group {
+  margin-bottom: 20px;
+  padding: 10px 0px;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb li + li::before {
+  content: ">";
+  margin: 0 8px; /* Space around the separator */
+  color: #999; /* Neutral color for separator */
+}
+
+/* Link Styles */
+.breadcrumb a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: #5b0e0e; /* Slightly darker shade for hover */
+}
+
+/* Active State */
+.breadcrumb .active {
+  color: #555;
+  font-weight: 300;
+  pointer-events: none;
+}
+
+/* Disabled State */
+.breadcrumb .disabled {
+  color: #ccc;
+  pointer-events: none; /* Disable interaction */
+  cursor: not-allowed;
+}
+
+/* Breadcrumb with Icons */
+.breadcrumb .icon {
+  margin-right: 5px;
+  font-size: 18px; /* Size for icons */
+}
+
+/* Responsive Design for Breadcrumbs */
+@media (max-width: 768px) {
+  .breadcrumb {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* General Styling for Toggles */
+.toggle-demo {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.toggle-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Toggle Wrapper */
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+/* Hide Checkbox */
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider (Toggle Button) */
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 24px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  border-radius: 50%;
+  left: 3px;
+  bottom: 3px;
+  transition: transform 0.3s ease;
+}
+
+/* Checked State */
+.toggle input:checked + .slider {
+  background-color: var(--primary-color);
+}
+
+.toggle input:checked + .slider::before {
+  transform: translateX(26px); /* Move the knob to the right */
+}
+
+.toggle-group h3 {
+  margin: 0;
+  font-weight: 500;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Disabled State */
+.toggle input:disabled + .slider {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.toggle input:disabled + .slider::before {
+  background-color: #bdbdbd;
+}
+
+/* Optional: Label Styling */
+.toggle-label {
+  font-size: 16px;
+
+  color: #555;
+}

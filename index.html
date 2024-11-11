@@ -178,29 +178,262 @@
         </div>
       </section>
 
-      <section id="forms" class="content-section" style="display: none">
+      <section id="forms" class="content-section">
         <h2>Forms</h2>
         <p>This section will cover form styles and standards.</p>
+
+        <form class="form-demo">
+          <!-- Text Input -->
+          <div class="form-group">
+            <label for="text-input">Text Input</label>
+            <input
+              type="text"
+              id="text-input"
+              placeholder="Enter your text here"
+            />
+          </div>
+
+          <!-- Password Input -->
+          <div class="form-group">
+            <label for="password-input">Password Input</label>
+            <input
+              type="password"
+              id="password-input"
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <!-- Email Input -->
+          <div class="form-group">
+            <label for="email-input">Email Input</label>
+            <input
+              type="email"
+              id="email-input"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <!-- Dropdown -->
+          <div class="form-group">
+            <label for="dropdown">Dropdown</label>
+            <select id="dropdown">
+              <option value="">Select an option</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+          </div>
+
+          <!-- Textarea -->
+          <div class="form-group">
+            <label for="textarea">Textarea</label>
+            <textarea
+              id="textarea"
+              rows="4"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
       </section>
 
-      <section id="tables" class="content-section" style="display: none">
+      <section id="tables" class="content-section">
         <h2>Tables</h2>
-        <p>This section will cover table styles and standards.</p>
+
+        <div class="table-demo">
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                <th>Column 4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+                <td>Row 1, Cell 4</td>
+              </tr>
+              <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+                <td>Row 2, Cell 4</td>
+              </tr>
+              <tr class="active-row">
+                <td>Row 3, Cell 1</td>
+                <td>Row 3, Cell 2</td>
+                <td>Row 3, Cell 3</td>
+                <td>Row 3, Cell 4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
-      <section id="lists" class="content-section" style="display: none">
+      <section id="lists" class="content-section">
         <h2>Lists</h2>
-        <p>This section will cover list styles and standards.</p>
+
+        <div class="list-demo">
+          <!-- Unordered List -->
+          <div class="list-group">
+            <h3>Unordered List</h3>
+            <ul class="styled-list">
+              <li>First item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+              <li>Fourth item</li>
+            </ul>
+          </div>
+
+          <!-- Ordered List -->
+          <div class="list-group">
+            <h3>Ordered List</h3>
+            <ol class="styled-list">
+              <li>First item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+              <li>Fourth item</li>
+            </ol>
+          </div>
+
+          <!-- Nested List -->
+          <div class="list-group">
+            <h3>Nested List</h3>
+            <ul class="styled-list">
+              <li>
+                Parent item
+                <ul>
+                  <li>Child item 1</li>
+                  <li>Child item 2</li>
+                  <li>Child item 3</li>
+                </ul>
+              </li>
+              <li>
+                Parent item 2
+                <ul>
+                  <li>Child item 1</li>
+                  <li>Child item 2</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Description List -->
+          <div class="list-group">
+            <h3>Description List</h3>
+            <dl class="styled-description-list">
+              <dt>HTML</dt>
+              <dd>A markup language for creating web pages.</dd>
+              <dt>CSS</dt>
+              <dd>A style sheet language for designing web pages.</dd>
+              <dt>JavaScript</dt>
+              <dd>A programming language for web development.</dd>
+            </dl>
+          </div>
+        </div>
       </section>
 
-      <section id="breadcrumbs" class="content-section" style="display: none">
+      <section id="breadcrumbs" class="content-section">
         <h2>Breadcrumbs</h2>
-        <p>This section will cover breadcrumb styles and standards.</p>
+
+        <div class="breadcrumb-demo">
+          <!-- Basic Breadcrumb -->
+          <div class="breadcrumb-group">
+            <h3>Basic Breadcrumb</h3>
+            <nav aria-label="Breadcrumb">
+              <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Category</a></li>
+                <li class="active">Product</li>
+              </ol>
+            </nav>
+          </div>
+
+          <!-- Hierarchical Breadcrumb -->
+          <div class="breadcrumb-group">
+            <h3>Hierarchical Breadcrumb</h3>
+            <nav aria-label="Breadcrumb">
+              <ol class="breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Annual</a></li>
+                <li class="active">2024</li>
+              </ol>
+            </nav>
+          </div>
+
+          <!-- Breadcrumb with Icons -->
+          <div class="breadcrumb-group">
+            <h3>Breadcrumb with Icons</h3>
+            <nav aria-label="Breadcrumb">
+              <ol class="breadcrumb">
+                <li>
+                  <a href="#"><span class="icon">🏠</span> Home</a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon">📂</span> Documents</a>
+                </li>
+                <li class="active"><span class="icon">📄</span> File</li>
+              </ol>
+            </nav>
+          </div>
+
+          <!-- Disabled Breadcrumb -->
+          <div class="breadcrumb-group">
+            <h3>Breadcrumb with Disabled State</h3>
+            <nav aria-label="Breadcrumb">
+              <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="disabled">
+                  <a href="#" aria-disabled="true">Archived</a>
+                </li>
+                <li class="active">Current</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
       </section>
 
-      <section id="toggles" class="content-section" style="display: none">
+      <section id="toggles" class="content-section">
         <h2>Toggles</h2>
-        <p>This section will cover toggle styles and standards.</p>
+
+        <div class="toggle-demo">
+          <!-- Basic Toggle -->
+          <div class="toggle-group">
+            <h3>Basic Toggle</h3>
+            <label class="toggle">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <!-- Toggle with Label -->
+          <div class="toggle-group">
+            <h3>Toggle with Label</h3>
+            <label class="toggle">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+            <span class="toggle-label">Enable Notifications</span>
+          </div>
+
+          <!-- Disabled Toggle -->
+          <div class="toggle-group">
+            <h3>Disabled Toggle</h3>
+            <label class="toggle">
+              <input type="checkbox" disabled />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
       </section>
     </main>
 
