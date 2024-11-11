@@ -124,7 +124,7 @@ main {
   font-family: Arial, sans-serif;
   font-size: 16px;
   padding: 10px 20px;
-  border: none;
+  /* b  order: none; */
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
@@ -201,102 +201,102 @@ main {
 
 /* Primary Outline Button */
 .btn-primary-outline {
-    background-color: transparent;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color) !important;
 }
 
 .btn-primary-outline:hover {
-    background-color: var(--primary-color);
-    color: #fff;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 .btn-primary-outline:focus {
-    outline: 2px solid #ffa5a5;
-    outline-offset: 2px;
+  outline: 2px solid #ffa5a5;
+  outline-offset: 2px;
 }
 
 .btn-primary-outline:disabled {
-    color: #8c4d4d;
-    border-color: #8c4d4d;
-    cursor: not-allowed;
+  color: #8c4d4d;
+  border-color: #8c4d4d;
+  cursor: not-allowed;
 }
 
 /* Secondary Outline Button */
 .btn-secondary-outline {
-    background-color: transparent;
-    color: var(--secondary-color);
-    border: 2px solid var(--secondary-color);
+  background-color: transparent;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color) !important;
 }
 
 .btn-secondary-outline:hover {
-    background-color: var(--secondary-color);
-    color: #fff;
+  background-color: var(--secondary-color);
+  color: #fff;
 }
 
 .btn-secondary-outline:focus {
-    outline: 2px solid #a5a5a5;
-    outline-offset: 2px;
+  outline: 2px solid #a5a5a5;
+  outline-offset: 2px;
 }
 
 .btn-secondary-outline:disabled {
-    color: #666;
-    border-color: #666;
-    cursor: not-allowed;
+  color: #666;
+  border-color: #666;
+  cursor: not-allowed;
 }
 
 /* Tertiary Outline Button */
 .btn-tertiary-outline {
-    background-color: transparent;
-    color: var(--tertiary-color);
-    border: 2px solid var(--tertiary-color);
+  background-color: transparent;
+  color: var(--tertiary-color);
+  border: 2px solid var(--tertiary-color) !important;
 }
 
 .btn-tertiary-outline:hover {
-    background-color: var(--tertiary-color);
-    color: #fff;
+  background-color: var(--tertiary-color);
+  color: #fff;
 }
 
 .btn-tertiary-outline:focus {
-    outline: 2px solid #d1e7b5;
-    outline-offset: 2px;
+  outline: 2px solid #d1e7b5;
+  outline-offset: 2px;
 }
 
 .btn-tertiary-outline:disabled {
-    color: #a3b48c;
-    border-color: #a3b48c;
-    cursor: not-allowed;
+  color: #a3b48c;
+  border-color: #a3b48c;
+  cursor: not-allowed;
 }
 
 .button-demo {
-    display: flex;
-    flex-wrap: wrap;
-    /* Allows wrapping of buttons */
-    gap: 10px;
-    /* Space between buttons */
-    margin-top: 20px;
-    justify-content: space-between;
-    /* Ensures even spacing */
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows wrapping of buttons */
+  gap: 10px;
+  /* Space between buttons */
+  margin-top: 20px;
+  justify-content: space-between;
+  /* Ensures even spacing */
 }
 
 /* Align buttons into rows of 4 */
-.button-demo>button {
-    flex: 1 1 calc(25% - 10px);
-    /* Each button takes up 25% of the row minus the gap */
-    text-align: center;
-    margin: 0;
-    box-sizing: border-box;
+.button-demo > button {
+  flex: 1 1 calc(25% - 10px);
+  /* Each button takes up 25% of the row minus the gap */
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* Optional: Style for different rows */
-.button-demo>button:nth-child(4n + 1) {
-    margin-left: 0;
-    /* No extra margin on the first button in a row */
+.button-demo > button:nth-child(4n + 1) {
+  margin-left: 0;
+  /* No extra margin on the first button in a row */
 }
 
-.button-demo>button:nth-child(4n) {
-    margin-right: 0;
-    /* No extra margin on the last button in a row */
+.button-demo > button:nth-child(4n) {
+  margin-right: 0;
+  /* No extra margin on the last button in a row */
 }
 
 /* General form styling */
@@ -667,8 +667,6 @@ textarea {
   color: #555;
 }
 
-
-
 .typeface,
 .typeface-content {
   width: 200px;
@@ -680,12 +678,56 @@ textarea {
 
 .typeface p,
 .typeface-content p {
-
-    color: #f1f1f2;
+  color: #f1f1f2;
 }
-
 
 .content-typogrpahy {
   font-family: "Quicksand", sans-serif;
 }
 
+/* General Styling for the Code Demo Box */
+.code-demo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Component Preview Section */
+.component-preview {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Code Editor Styling */
+.code-editor {
+  background-color: #272822; /* Dark theme for the code editor */
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto; /* Enable horizontal scrolling for long lines */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  border: 1px solid #444;
+}
+
+.code-editor pre {
+  margin: 0;
+}
+
+.code-editor code {
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
