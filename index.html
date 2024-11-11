@@ -1,107 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pattern Library</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Header Section -->
     <header>
-        <img src="Logo/logo.png" alt="Logo" class="logo">
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="#" onclick="showSection('dashboard')">Dashboard</a></li>
-                <li class="dropdown">
-                    <a href="#" onclick="toggleDropdown('general-dropdown')">General</a>
-                    <ul id="general-dropdown" class="dropdown-content">
-                        <li><a href="#" onclick="showSection('typography')">Typography</a></li>
-                        <li><a href="#" onclick="showSection('colors')">Colors</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" onclick="toggleDropdown('elements-dropdown')">Elements</a>
-                    <ul id="elements-dropdown" class="dropdown-content">
-                        <li><a href="#" onclick="showSection('buttons')">Buttons</a></li>
-                        <li><a href="#" onclick="showSection('forms')">Forms</a></li>
-                        <li><a href="#" onclick="showSection('tables')">Tables</a></li>
-                        <li><a href="#" onclick="showSection('lists')">Lists</a></li>
-                        <li><a href="#" onclick="showSection('breadcrumbs')">Breadcrumbs</a></li>
-                        <li><a href="#" onclick="showSection('toggles')">Toggles</a></li>
-                    </ul>
-                </li>
+      <img src="Logo/logo.png" alt="Logo" class="logo" />
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#" onclick="showSection('dashboard')">Dashboard</a></li>
+          <li class="dropdown">
+            <a href="#" onclick="toggleDropdown('general-dropdown')">General</a>
+            <ul id="general-dropdown" class="dropdown-content">
+              <li>
+                <a href="#" onclick="showSection('typography')">Typography</a>
+              </li>
+              <li><a href="#" onclick="showSection('colors')">Colors</a></li>
             </ul>
-        </nav>
+          </li>
+          <li class="dropdown">
+            <a href="#" onclick="toggleDropdown('elements-dropdown')"
+              >Elements</a
+            >
+            <ul id="elements-dropdown" class="dropdown-content">
+              <li><a href="#" onclick="showSection('buttons')">Buttons</a></li>
+              <li><a href="#" onclick="showSection('forms')">Forms</a></li>
+              <li><a href="#" onclick="showSection('tables')">Tables</a></li>
+              <li><a href="#" onclick="showSection('lists')">Lists</a></li>
+              <li>
+                <a href="#" onclick="showSection('breadcrumbs')">Breadcrumbs</a>
+              </li>
+              <li><a href="#" onclick="showSection('toggles')">Toggles</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Main Content Sections -->
     <main>
-        <section id="dashboard" class="content-section">
-            <h2>Dashboard</h2>
-            <p>Welcome to the pattern library. This is the dashboard section.</p>
-            <!-- Placeholder for chart layout -->
-            <div class="charts">
-                <div class="chart-placeholder">Chart 1</div>
-                <div class="chart-placeholder">Chart 2</div>
-                <div class="chart-placeholder">Chart 3</div>
-                <div class="chart-placeholder">Chart 4</div>
-                <div class="chart-placeholder">Chart 5</div>
-                <div class="chart-placeholder">Chart 6</div>
-            </div>
-            <!-- Example grid layout -->
-            <div class="grid-layout">
-                <div class="grid-box">Box 1</div>
-                <div class="grid-box">Box 2</div>
-                <div class="grid-box">Box 3</div>
-                <div class="grid-box">Box 4</div>
-                <div class="grid-box">Box 5</div>
-                <div class="grid-box">Box 6</div>
-            </div>
-        </section>
+      <section id="dashboard" class="content-section">
+        <h2>Dashboard</h2>
+        <p>Welcome to the pattern library. This is the dashboard section.</p>
+        <!-- Placeholder for chart layout -->
+        <div class="charts">
+          <div class="chart-placeholder">Chart 1</div>
+          <div class="chart-placeholder">Chart 2</div>
+          <div class="chart-placeholder">Chart 3</div>
+          <div class="chart-placeholder">Chart 4</div>
+          <div class="chart-placeholder">Chart 5</div>
+          <div class="chart-placeholder">Chart 6</div>
+        </div>
+        <!-- Example grid layout -->
+        <div class="grid-layout">
+          <div class="grid-box">Box 1</div>
+          <div class="grid-box">Box 2</div>
+          <div class="grid-box">Box 3</div>
+          <div class="grid-box">Box 4</div>
+          <div class="grid-box">Box 5</div>
+          <div class="grid-box">Box 6</div>
+        </div>
+      </section>
 
-        <section id="typography" class="content-section" style="display: none;">
-            <h2>Typography</h2>
-            <p>This section will cover typography styles and standards.</p>
-        </section>
+      <section id="typography" class="content-section" style="display: none">
+        <h2>Typography</h2>
+        <p>This section will cover typography styles and standards.</p>
+      </section>
 
-        <section id="colors" class="content-section" style="display: none;">
-            <h2>Colors</h2>
-            <p>This section will cover color styles and standards.</p>
-        </section>
+      <section id="colors" class="content-section" style="display: none">
+        <h2>Colors</h2>
+        <p>This section will cover color styles and standards.</p>
+      </section>
 
-        <section id="buttons" class="content-section" style="display: none;">
-            <h2>Buttons</h2>
-            <p>This section will cover button styles and standards.</p>
-        </section>
+      <section id="buttons" class="content-section">
+        <h2>Buttons</h2>
 
-        <section id="forms" class="content-section" style="display: none;">
-            <h2>Forms</h2>
-            <p>This section will cover form styles and standards.</p>
-        </section>
+        <div class="button-demo">
+          <button class="btn btn-primary">Primary Button</button>
+          <button class="btn btn-secondary">Secondary Button</button>
+          <button class="btn btn-tertiary">Tertiary Button</button>
+          <button class="btn btn-primary" disabled>Disabled Button</button>
+        </div>
+      </section>
 
-        <section id="tables" class="content-section" style="display: none;">
-            <h2>Tables</h2>
-            <p>This section will cover table styles and standards.</p>
-        </section>
+      <section id="forms" class="content-section" style="display: none">
+        <h2>Forms</h2>
+        <p>This section will cover form styles and standards.</p>
+      </section>
 
-        <section id="lists" class="content-section" style="display: none;">
-            <h2>Lists</h2>
-            <p>This section will cover list styles and standards.</p>
-        </section>
+      <section id="tables" class="content-section" style="display: none">
+        <h2>Tables</h2>
+        <p>This section will cover table styles and standards.</p>
+      </section>
 
-        <section id="breadcrumbs" class="content-section" style="display: none;">
-            <h2>Breadcrumbs</h2>
-            <p>This section will cover breadcrumb styles and standards.</p>
-        </section>
+      <section id="lists" class="content-section" style="display: none">
+        <h2>Lists</h2>
+        <p>This section will cover list styles and standards.</p>
+      </section>
 
-        <section id="toggles" class="content-section" style="display: none;">
-            <h2>Toggles</h2>
-            <p>This section will cover toggle styles and standards.</p>
-        </section>
+      <section id="breadcrumbs" class="content-section" style="display: none">
+        <h2>Breadcrumbs</h2>
+        <p>This section will cover breadcrumb styles and standards.</p>
+      </section>
+
+      <section id="toggles" class="content-section" style="display: none">
+        <h2>Toggles</h2>
+        <p>This section will cover toggle styles and standards.</p>
+      </section>
     </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
