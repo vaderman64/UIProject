@@ -1,185 +1,248 @@
 /* Basic Reset */
 /* define variable */
 
+/* Titles, header, and menu font:
+font-family: 'lakeside-regular', serif;
+*/
+
+
+/* Body font:
+font-family: 'quatro-slab', serif;
+*/
+
 :root {
-  --primary-color: #3c0a0a;
-  --secondary-color: #222;
-  --tertiary-color: #6c7d47;
+    --primary-color: #3c0a0a;
+    --secondary-color: #222;
+    --tertiary-color: #6c7d47;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
+    background-color: #f4f4f9;
 }
 
 /* Header Styling */
 header {
-  display: flex;
-  align-items: center;
-  background-color: #333;
-  padding: 10px 20px;
-  color: #fff;
+    font-family: 'lakeside-regular', serif;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
 }
 
 .logo {
-  width: 110px;
-  height: auto;
-  margin-right: 20px;
+    width: 110px;
+    height: auto;
+    margin-right: 20px;
 }
 
 .nav-menu {
-  display: flex;
-  list-style: none;
+    display: flex;
+    list-style: none;
 }
 
-.nav-menu > li {
-  position: relative;
-  margin: 0 15px;
+.nav-menu>li {
+    position: relative;
+    margin: 0 15px;
 }
 
 .nav-menu a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #444;
-  min-width: 150px;
-  list-style: none;
-  padding: 0;
-  margin-top: 5px;
-  border-radius: 5px;
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 150px;
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    border-radius: 5px;
 }
 
 .dropdown-content li a {
-  display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
 }
 
 .dropdown-content li a:hover {
-  background-color: #555;
+    background-color: #555;
 }
 
 /* Main Content Styling */
 main {
-  padding: 20px;
+    padding: 20px;
 }
 
 /* Charts Section Styling */
 .charts {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
 }
 
 .chart-placeholder {
-  background-color: #ddd;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
+    background-color: #ddd;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
 
 /* Grid Layout Section Styling */
 .grid-layout {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .grid-box {
-  background-color: #ccc;
-  padding: 30px;
-  text-align: center;
-  font-weight: bold;
+    background-color: #ccc;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
 }
 
 /* General button styles */
 .btn {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-  display: inline-block;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Primary button */
 .btn-primary {
-  background-color: var(--primary-color);
-  color: #fff;
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 .btn-primary:hover {
-  background-color: #5b0e0e; /* Darker shade for hover */
+    background-color: #5b0e0e;
+    /* Darker shade for hover */
 }
 
 .btn-primary:focus {
-  outline: 2px solid #ffa5a5;
-  outline-offset: 2px;
+    outline: 2px solid #ffa5a5;
+    outline-offset: 2px;
 }
 
 .btn-primary:disabled {
-  background-color: #8c4d4d;
-  cursor: not-allowed;
+    background-color: #8c4d4d;
+    cursor: not-allowed;
 }
 
 /* Secondary button */
 .btn-secondary {
-  background-color: var(--secondary-color);
-  color: #fff;
+    background-color: var(--secondary-color);
+    color: #fff;
 }
 
 .btn-secondary:hover {
-  background-color: #444; /* Lighter shade for hover */
+    background-color: #444;
+    /* Lighter shade for hover */
 }
 
 .btn-secondary:focus {
-  outline: 2px solid #a5a5a5;
-  outline-offset: 2px;
+    outline: 2px solid #a5a5a5;
+    outline-offset: 2px;
 }
 
 .btn-secondary:disabled {
-  background-color: #666;
-  cursor: not-allowed;
+    background-color: #666;
+    cursor: not-allowed;
 }
 
 /* Tertiary button */
 .btn-tertiary {
-  background-color: var(--tertiary-color);
-  color: #fff;
+    background-color: var(--tertiary-color);
+    color: #fff;
 }
 
 .btn-tertiary:hover {
-  background-color: #879c57; /* Lighter shade for hover */
+    background-color: #879c57;
+    /* Lighter shade for hover */
 }
 
 .btn-tertiary:focus {
-  outline: 2px solid #d1e7b5;
-  outline-offset: 2px;
+    outline: 2px solid #d1e7b5;
+    outline-offset: 2px;
 }
 
 .btn-tertiary:disabled {
-  background-color: #a3b48c;
-  cursor: not-allowed;
+    background-color: #a3b48c;
+    cursor: not-allowed;
+}
+
+
+/* Heading Sizes */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'lakeside-regular', serif;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 56px;
+    margin-top: 65px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 44px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    font-size: 38px;
+}
+
+/* Typography Class Styles */
+.heading-typogrpahy {
+    
+}
+
+.typeface,
+.typeface-content {
+    width: 200px;
+    height: 200px;
+    background: #1995ad;
+    font-size: 140px;
+    text-align: center;
+}
+
+.typeface p,
+.typeface-content p {
+    color: #f1f1f2;
+}
+
+.content-typogrpahy {
+    font-family: 'Quicksand', sans-serif;
 }
