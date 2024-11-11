@@ -133,7 +133,9 @@ main {
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Primary button */
+/* Solid Buttons */
+
+/* Primary Button */
 .btn-primary {
     background-color: var(--primary-color);
     color: #fff;
@@ -154,7 +156,7 @@ main {
     cursor: not-allowed;
 }
 
-/* Secondary button */
+/* Secondary Button */
 .btn-secondary {
     background-color: var(--secondary-color);
     color: #fff;
@@ -175,7 +177,7 @@ main {
     cursor: not-allowed;
 }
 
-/* Tertiary button */
+/* Tertiary Button */
 .btn-tertiary {
     background-color: var(--tertiary-color);
     color: #fff;
@@ -194,6 +196,102 @@ main {
 .btn-tertiary:disabled {
     background-color: #a3b48c;
     cursor: not-allowed;
+}
+
+/* Outline Buttons */
+
+/* Primary Outline Button */
+.btn-primary-outline {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-primary-outline:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-primary-outline:focus {
+  outline: 2px solid #ffa5a5;
+  outline-offset: 2px;
+}
+
+.btn-primary-outline:disabled {
+  color: #8c4d4d;
+  border-color: #8c4d4d;
+  cursor: not-allowed;
+}
+
+/* Secondary Outline Button */
+.btn-secondary-outline {
+  background-color: transparent;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+
+.btn-secondary-outline:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.btn-secondary-outline:focus {
+  outline: 2px solid #a5a5a5;
+  outline-offset: 2px;
+}
+
+.btn-secondary-outline:disabled {
+  color: #666;
+  border-color: #666;
+  cursor: not-allowed;
+}
+
+/* Tertiary Outline Button */
+.btn-tertiary-outline {
+  background-color: transparent;
+  color: var(--tertiary-color);
+  border: 2px solid var(--tertiary-color);
+}
+
+.btn-tertiary-outline:hover {
+  background-color: var(--tertiary-color);
+  color: #fff;
+}
+
+.btn-tertiary-outline:focus {
+  outline: 2px solid #d1e7b5;
+  outline-offset: 2px;
+}
+
+.btn-tertiary-outline:disabled {
+  color: #a3b48c;
+  border-color: #a3b48c;
+  cursor: not-allowed;
+}
+
+.button-demo {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of buttons */
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px;
+  justify-content: space-between; /* Ensures even spacing */
+}
+
+/* Align buttons into rows of 4 */
+.button-demo > button {
+  flex: 1 1 calc(25% - 10px); /* Each button takes up 25% of the row minus the gap */
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Optional: Style for different rows */
+.button-demo > button:nth-child(4n + 1) {
+  margin-left: 0; /* No extra margin on the first button in a row */
+}
+
+.button-demo > button:nth-child(4n) {
+  margin-right: 0; /* No extra margin on the last button in a row */
 }
 
 
