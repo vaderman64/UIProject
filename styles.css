@@ -1,6 +1,14 @@
 /* Basic Reset */
 /* define variable */
 
+/* Titles, header, and menu font:
+font-family: 'lakeside-regular', serif;
+*/
+
+/* Body font:
+font-family: 'quatro-slab', serif;
+*/
+
 :root {
   --primary-color: #3c0a0a;
   --secondary-color: #222;
@@ -14,12 +22,12 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   background-color: #f4f4f9;
 }
 
 /* Header Styling */
 header {
+  font-family: "lakeside-regular", serif;
   display: flex;
   align-items: center;
   background-color: #333;
@@ -133,7 +141,8 @@ main {
 }
 
 .btn-primary:hover {
-  background-color: #5b0e0e; /* Darker shade for hover */
+  background-color: #5b0e0e;
+  /* Darker shade for hover */
 }
 
 .btn-primary:focus {
@@ -153,7 +162,8 @@ main {
 }
 
 .btn-secondary:hover {
-  background-color: #444; /* Lighter shade for hover */
+  background-color: #444;
+  /* Lighter shade for hover */
 }
 
 .btn-secondary:focus {
@@ -173,7 +183,8 @@ main {
 }
 
 .btn-tertiary:hover {
-  background-color: #879c57; /* Lighter shade for hover */
+  background-color: #879c57;
+  /* Lighter shade for hover */
 }
 
 .btn-tertiary:focus {
@@ -648,4 +659,53 @@ textarea {
   font-size: 16px;
 
   color: #555;
+}
+
+/* Heading Sizes */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "lakeside-regular", serif;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 56px;
+  margin-top: 65px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 44px;
+  margin-bottom: 50px;
+}
+
+h4 {
+  font-size: 38px;
+}
+
+/* Typography Class Styles */
+.heading-typogrpahy {
+}
+
+.typeface,
+.typeface-content {
+  width: 200px;
+  height: 200px;
+  background: #1995ad;
+  font-size: 140px;
+  text-align: center;
+}
+
+.typeface p,
+.typeface-content p {
+  color: #f1f1f2;
+}
+
+.content-typogrpahy {
+  font-family: "Quicksand", sans-serif;
 }
