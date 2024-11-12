@@ -1,3 +1,8 @@
+window.onload = function() {
+    // Show only the layout on load
+    showSection('dashboard');
+  };
+  
 function showSection(sectionId) {
     // Hide all content sections
     document.querySelectorAll('.content-section').forEach(section => {

@@ -1,495 +1,599 @@
+<!-- You can navigate this document with control f
+Sections are named like so:
+"Begin typography section" 
+"End typography section"
+-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pattern Library</title>
-    <!-- Import Styles -->
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Import Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/fdx1gis.css" />
-  </head>
-  <body>
-    <!-- Header Section -->
-    <header>
-      <img src="Logo/logo.png" alt="Logo" class="logo" />
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="#" onclick="showSection('dashboard')">Dashboard</a></li>
-          <li class="dropdown">
-            <a href="#" onclick="toggleDropdown('general-dropdown')">General</a>
-            <ul id="general-dropdown" class="dropdown-content">
-              <li>
-                <a href="#" onclick="showSection('typography')">Typography</a>
-              </li>
-              <li><a href="#" onclick="showSection('colors')">Colors</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" onclick="toggleDropdown('elements-dropdown')"
-              >Elements</a
-            >
-            <ul id="elements-dropdown" class="dropdown-content">
-              <li><a href="#" onclick="showSection('buttons')">Buttons</a></li>
-              <li><a href="#" onclick="showSection('forms')">Forms</a></li>
-              <li><a href="#" onclick="showSection('tables')">Tables</a></li>
-              <li><a href="#" onclick="showSection('lists')">Lists</a></li>
-              <li>
-                <a href="#" onclick="showSection('breadcrumbs')">Breadcrumbs</a>
-              </li>
-              <li><a href="#" onclick="showSection('toggles')">Toggles</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
 
-    <!-- Main Content Sections -->
-    <main>
-      <section id="dashboard" class="content-section">
-        <h2>Dashboard</h2>
-        <p>Welcome to the pattern library. This is the dashboard section.</p>
-        <!-- Placeholder for chart layout -->
-        <div class="charts">
-          <div class="chart-placeholder">Chart 1</div>
-          <div class="chart-placeholder">Chart 2</div>
-          <div class="chart-placeholder">Chart 3</div>
-          <div class="chart-placeholder">Chart 4</div>
-          <div class="chart-placeholder">Chart 5</div>
-          <div class="chart-placeholder">Chart 6</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pattern Library</title>
+  <!-- Import Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Import Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/fdx1gis.css" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <img src="Logo/logo.png" alt="Logo" class="logo" />
+    <nav>
+      <ul class="nav-menu">
+        <h2>CanJet Pattern Library</h2>
+        <li><a href="#" onclick="showSection('dashboard')">Layout</a></li>
+        <li class="dropdown">
+          <a href="#" onclick="toggleDropdown('general-dropdown')">General</a>
+          <ul id="general-dropdown" class="dropdown-content">
+            <li>
+              <a href="#" onclick="showSection('typography')">Typography</a>
+            </li>
+            <li><a href="#" onclick="showSection('colors')">Colors</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" onclick="toggleDropdown('elements-dropdown')">Elements</a>
+          <ul id="elements-dropdown" class="dropdown-content">
+            <li><a href="#" onclick="showSection('buttons')">Buttons</a></li>
+            <li><a href="#" onclick="showSection('forms')">Forms</a></li>
+            <li><a href="#" onclick="showSection('tables')">Tables</a></li>
+            <li><a href="#" onclick="showSection('lists')">Lists</a></li>
+            <li>
+              <a href="#" onclick="showSection('breadcrumbs')">Breadcrumbs</a>
+            </li>
+            <li><a href="#" onclick="showSection('toggles')">Toggles</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Sections -->
+  <main>
+    <section id="dashboard" class="content-section">
+      <div>
+        <h2>Featured Articles</h2>
+        <div class="grid-container">
+          <div class="grid-item">
+            <h3>Article Title 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+          </div>
+          <div class="grid-item">
+            <h3>Article Title 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+          </div>
+          <div class="grid-item">
+            <h3>Article Title 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+          </div>
         </div>
-        <!-- Example grid layout -->
-        <div class="grid-layout">
-          <div class="grid-box">Box 1</div>
-          <div class="grid-box">Box 2</div>
-          <div class="grid-box">Box 3</div>
-          <div class="grid-box">Box 4</div>
-          <div class="grid-box">Box 5</div>
-          <div class="grid-box">Box 6</div>
+      </div>
+
+      <div>
+        <h2>Our Services</h2>
+        <div class="grid-container">
+          <div class="grid-item">
+            <h3>Service 1</h3>
+            <p>We offer exceptional service in various fields. Let us help you achieve your goals.</p>
+          </div>
+          <div class="grid-item">
+            <h3>Service 2</h3>
+            <p>Our expert team ensures you receive the best quality service tailored to your needs.</p>
+          </div>
+          <div class="grid-item">
+            <h3>Service 3</h3>
+            <p>Innovative solutions designed to support your business growth and success.</p>
+          </div>
         </div>
-      </section>
+      </div>
+      
+      <div>
+        <h2 style="text-align: center;">Chart Data</h2>
+        <section id="images">
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image 1" width="150" height="150">
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image 1" width="150" height="150">
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image 1" width="150" height="150">
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image 1" width="150" height="150">
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image 1" width="150" height="150">
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image 1" width="150" height="150">
+        </section>
+      </div>
 
-      <!-- Begin typography section -->
+      <div>
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      </div>
 
-      <section id="typography" class="content-section" style="display: none">
-        <h2>Test</h2>
-        <p>testing</p>
-      </section>
+    </section>
 
-      <!-- End typography section -->
+    <!-- Begin typography section -->
 
-      <section id="colors" class="content-section" style="display: none">
-        <h2>Colors</h2>
-        <p>This section will cover color styles and standards.</p>
-      </section>
+    <section id="typography" class="content-section" style="display: none">
+      <h1>Typography</h1>
+      <h3>Headings</h3>
+      <hr>
+      <h1>CanJet Heading 1</h1>
+      <p>32px "The Youngest" Sans-Serif, Normal</p>
+      <hr>
+      <h2>CanJet Heading 2</h2>
+      <p>24px "The Youngest" Sans-Serif, Normal</p>
+      <hr>
+      <h3>CanJet Heading 3</h3>
+      <p>19px "The Youngest" Sans-Serif, Normal</p>
+      <hr>
+      <h4>CanJet Heading 4</h4>
+      <p>16px "The Youngest" Sans-Serif, Normal</p>
+      <hr>
+      <h5>CanJet Heading 5</h5>
+      <p>13px "The Youngest" Sans-Serif, Normal</p>
+      <hr>
+      <h6>CanJet Heading 6</h6>
+      <p>11px "The Youngest" Sans-Serif, Normal</p>
+      <hr>
+      <br />
+      <h3>CanJet Body Text</h3>
+      <br />
+      <hr>
+      <p>This is a 16px paragraph, normal, styled with the body font. The quick brown fox jumps over the lazy dog. Font
+        is Quatro-Slab</p>
+      <hr>
+      <blockquote>
+        "This is a 16px blockquote, normal, styled with the body font. It’s meant to set off a quotation or cited text.
+        Font is Quatro-Slab"
+      </blockquote>
+      <hr>
+      <small>Small text for fine print or secondary information. 13px, Quatro-Slab</small>
+      <hr>
+      <p><strong>Bold text for emphasis. 16px, Quatro-Slab</strong></p>
+      <hr>
+      <p><em>Italic text for styling emphasis. 16px, Quatro-Slab</em></p>
+    </section>
+    <!-- End typography section -->
 
-      <section id="buttons" class="content-section">
-        <h2>Buttons</h2>
 
-        <div class="button-demo">
-          <button class="btn btn-primary">Primary Button</button>
-          <button class="btn btn-secondary">Secondary Button</button>
-          <button class="btn btn-tertiary">Tertiary Button</button>
-          <button class="btn btn-primary" disabled>Disabled Button</button>
+    <!-- Begin Colors Section -->
+    <section id="colors" class="content-section" style="display: none">
+      <h2>Colors</h2>
+      <hr>
+      <h1 id="color-header">Brand Colors</h1>
 
-          <button class="btn btn-primary-outline">
-            Primary Outline Button
-          </button>
-          <button class="btn btn-secondary-outline">
-            Secondary Outline Button
-          </button>
-          <button class="btn btn-tertiary-outline">
-            Tertiary Outline Button
-          </button>
-          <button class="btn btn-primary-outline" disabled>
-            Disabled Outline Button
-          </button>
-        </div>
+      <div class="color-swatch">
+        <div class="color-box primary"></div>
+        <p>Primary Color</p>
+        <code>#3c0a0a</code>
+      </div>
 
-        <div class="code-demo-lists">
-          <!-- Primary Button -->
-          <div class="code-demo">
-            <div class="component-preview">
-              <button class="btn btn-primary">Primary Button</button>
-            </div>
-            <div class="code-editor">
-              <pre>
+      <div class="color-swatch">
+        <div class="color-box secondary"></div>
+        <p>Secondary Color</p>
+        <code>#222</code>
+      </div>
+
+      <div class="color-swatch">
+        <div class="color-box tertiary"></div>
+        <p>Tertiary Color</p>
+        <code>#6c7d47</code>
+      </div>
+      <div class="color-swatch">
+        <div class="color-box background"></div>
+        <p>Background Color</p>
+        <code>#f4f4f9</code>
+      </div>
+    </section>
+    <!-- End Colors section -->
+
+    <!-- Begin buttons section-->
+    <section id="buttons" class="content-section">
+      <h2>Buttons</h2>
+
+      <div class="button-demo">
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-secondary">Secondary Button</button>
+        <button class="btn btn-tertiary">Tertiary Button</button>
+        <button class="btn btn-primary" disabled>Disabled Button</button>
+
+        <button class="btn btn-primary-outline">
+          Primary Outline Button
+        </button>
+        <button class="btn btn-secondary-outline">
+          Secondary Outline Button
+        </button>
+        <button class="btn btn-tertiary-outline">
+          Tertiary Outline Button
+        </button>
+        <button class="btn btn-primary-outline" disabled>
+          Disabled Outline Button
+        </button>
+      </div>
+
+      <div class="code-demo-lists">
+        <!-- Primary Button -->
+        <div class="code-demo">
+          <div class="component-preview">
+            <button class="btn btn-primary">Primary Button</button>
+          </div>
+          <div class="code-editor">
+            <pre>
         <code>
         &lt;button class="btn btn-primary"&gt;Primary Button&lt;/button&gt;
         </code>
                     </pre>
-            </div>
           </div>
+        </div>
 
-          <!-- Secondary Button -->
-          <div class="code-demo">
-            <div class="component-preview">
-              <button class="btn btn-secondary">Secondary Button</button>
-            </div>
-            <div class="code-editor">
-              <pre>
+        <!-- Secondary Button -->
+        <div class="code-demo">
+          <div class="component-preview">
+            <button class="btn btn-secondary">Secondary Button</button>
+          </div>
+          <div class="code-editor">
+            <pre>
         <code>
         &lt;button class="btn btn-secondary"&gt;Secondary Button&lt;/button&gt;
         </code>
                     </pre>
-            </div>
           </div>
+        </div>
 
-          <!-- Tertiary Button -->
-          <div class="code-demo">
-            <div class="component-preview">
-              <button class="btn btn-tertiary">Tertiary Button</button>
-            </div>
-            <div class="code-editor">
-              <pre>
+        <!-- Tertiary Button -->
+        <div class="code-demo">
+          <div class="component-preview">
+            <button class="btn btn-tertiary">Tertiary Button</button>
+          </div>
+          <div class="code-editor">
+            <pre>
         <code>
         &lt;button class="btn btn-tertiary"&gt;Tertiary Button&lt;/button&gt;
         </code>
                     </pre>
-            </div>
           </div>
+        </div>
 
-          <!-- Primary Outline Button -->
-          <div class="code-demo">
-            <div class="component-preview">
-              <button class="btn btn-primary-outline">
-                Primary Outline Button
-              </button>
-            </div>
-            <div class="code-editor">
-              <pre>
+        <!-- Primary Outline Button -->
+        <div class="code-demo">
+          <div class="component-preview">
+            <button class="btn btn-primary-outline">
+              Primary Outline Button
+            </button>
+          </div>
+          <div class="code-editor">
+            <pre>
         <code>
         &lt;button class="btn btn-primary-outline"&gt;Primary Outline Button&lt;/button&gt;
         </code>
                     </pre>
-            </div>
           </div>
+        </div>
 
-          <!-- Secondary Outline Button -->
-          <div class="code-demo">
-            <div class="component-preview">
-              <button class="btn btn-secondary-outline">
-                Secondary Outline Button
-              </button>
-            </div>
-            <div class="code-editor">
-              <pre>
+        <!-- Secondary Outline Button -->
+        <div class="code-demo">
+          <div class="component-preview">
+            <button class="btn btn-secondary-outline">
+              Secondary Outline Button
+            </button>
+          </div>
+          <div class="code-editor">
+            <pre>
         <code>
         &lt;button class="btn btn-secondary-outline"&gt;Secondary Outline Button&lt;/button&gt;
         </code>
                     </pre>
-            </div>
           </div>
+        </div>
 
-          <!-- Tertiary Outline Button -->
-          <div class="code-demo">
-            <div class="component-preview">
-              <button class="btn btn-tertiary-outline">
-                Tertiary Outline Button
-              </button>
-            </div>
-            <div class="code-editor">
-              <pre>
+        <!-- Tertiary Outline Button -->
+        <div class="code-demo">
+          <div class="component-preview">
+            <button class="btn btn-tertiary-outline">
+              Tertiary Outline Button
+            </button>
+          </div>
+          <div class="code-editor">
+            <pre>
         <code>
         &lt;button class="btn btn-tertiary-outline"&gt;Tertiary Outline Button&lt;/button&gt;
         </code>
                     </pre>
-            </div>
           </div>
+        </div>
 
-          <!-- Disabled Primary Button -->
-          <div class="code-demo">
-            <div class="component-preview">
-              <button class="btn btn-primary" disabled>
-                Disabled Primary Button
-              </button>
-            </div>
-            <div class="code-editor">
-              <pre>
+        <!-- Disabled Primary Button -->
+        <div class="code-demo">
+          <div class="component-preview">
+            <button class="btn btn-primary" disabled>
+              Disabled Primary Button
+            </button>
+          </div>
+          <div class="code-editor">
+            <pre>
         <code>
         &lt;button class="btn btn-primary" disabled&gt;Disabled Primary Button&lt;/button&gt;
         </code>
                     </pre>
-            </div>
           </div>
+        </div>
 
-          <!-- Disabled Outline Button -->
-          <div class="code-demo">
-            <div class="component-preview">
-              <button class="btn btn-primary-outline" disabled>
-                Disabled Outline Button
-              </button>
-            </div>
-            <div class="code-editor">
-              <pre>
+        <!-- Disabled Outline Button -->
+        <div class="code-demo">
+          <div class="component-preview">
+            <button class="btn btn-primary-outline" disabled>
+              Disabled Outline Button
+            </button>
+          </div>
+          <div class="code-editor">
+            <pre>
         <code>
         &lt;button class="btn btn-primary-outline" disabled&gt;Disabled Outline Button&lt;/button&gt;
         </code>
                     </pre>
-            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <!-- End Buttons Section -->
 
-      <section id="forms" class="content-section">
-        <h2>Forms</h2>
-        <p>This section will cover form styles and standards.</p>
+    <!-- Begin Forms Section -->
+    <section id="forms" class="content-section">
+      <h2>Forms</h2>
+      <p>This section will cover form styles and standards.</p>
 
-        <form class="form-demo">
-          <!-- Text Input -->
-          <div class="form-group">
-            <label for="text-input">Text Input</label>
-            <input
-              type="text"
-              id="text-input"
-              placeholder="Enter your text here"
-            />
-          </div>
-
-          <!-- Password Input -->
-          <div class="form-group">
-            <label for="password-input">Password Input</label>
-            <input
-              type="password"
-              id="password-input"
-              placeholder="Enter your password"
-            />
-          </div>
-
-          <!-- Email Input -->
-          <div class="form-group">
-            <label for="email-input">Email Input</label>
-            <input
-              type="email"
-              id="email-input"
-              placeholder="Enter your email"
-            />
-          </div>
-
-          <!-- Dropdown -->
-          <div class="form-group">
-            <label for="dropdown">Dropdown</label>
-            <select id="dropdown">
-              <option value="">Select an option</option>
-              <option value="option1">Option 1</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
-            </select>
-          </div>
-
-          <!-- Textarea -->
-          <div class="form-group">
-            <label for="textarea">Textarea</label>
-            <textarea
-              id="textarea"
-              rows="4"
-              placeholder="Enter your message"
-            ></textarea>
-          </div>
-
-          <!-- Submit Button -->
-          <div class="form-group">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </form>
-      </section>
-
-      <section id="tables" class="content-section">
-        <h2>Tables</h2>
-
-        <div class="table-demo">
-          <table class="styled-table">
-            <thead>
-              <tr>
-                <th>Column 1</th>
-                <th>Column 2</th>
-                <th>Column 3</th>
-                <th>Column 4</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Row 1, Cell 1</td>
-                <td>Row 1, Cell 2</td>
-                <td>Row 1, Cell 3</td>
-                <td>Row 1, Cell 4</td>
-              </tr>
-              <tr>
-                <td>Row 2, Cell 1</td>
-                <td>Row 2, Cell 2</td>
-                <td>Row 2, Cell 3</td>
-                <td>Row 2, Cell 4</td>
-              </tr>
-              <tr class="active-row">
-                <td>Row 3, Cell 1</td>
-                <td>Row 3, Cell 2</td>
-                <td>Row 3, Cell 3</td>
-                <td>Row 3, Cell 4</td>
-              </tr>
-            </tbody>
-          </table>
+      <form class="form-demo">
+        <!-- Text Input -->
+        <div class="form-group">
+          <label for="text-input">Text Input</label>
+          <input type="text" id="text-input" placeholder="Enter your text here" />
         </div>
-      </section>
 
-      <section id="lists" class="content-section">
-        <h2>Lists</h2>
+        <!-- Password Input -->
+        <div class="form-group">
+          <label for="password-input">Password Input</label>
+          <input type="password" id="password-input" placeholder="Enter your password" />
+        </div>
 
-        <div class="list-demo">
-          <!-- Unordered List -->
-          <div class="list-group">
-            <h3>Unordered List</h3>
-            <ul class="styled-list">
-              <li>First item</li>
-              <li>Second item</li>
-              <li>Third item</li>
-              <li>Fourth item</li>
-            </ul>
-          </div>
+        <!-- Email Input -->
+        <div class="form-group">
+          <label for="email-input">Email Input</label>
+          <input type="email" id="email-input" placeholder="Enter your email" />
+        </div>
 
-          <!-- Ordered List -->
-          <div class="list-group">
-            <h3>Ordered List</h3>
-            <ol class="styled-list">
-              <li>First item</li>
-              <li>Second item</li>
-              <li>Third item</li>
-              <li>Fourth item</li>
+        <!-- Dropdown -->
+        <div class="form-group">
+          <label for="dropdown">Dropdown</label>
+          <select id="dropdown">
+            <option value="">Select an option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+          <label for="textarea">Textarea</label>
+          <textarea id="textarea" rows="4" placeholder="Enter your message"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </section>
+    <!-- End forms section -->
+
+    <!-- Begin Tables Section -->
+    <section id="tables" class="content-section">
+      <h2>Tables</h2>
+
+      <div class="table-demo">
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>Column 3</th>
+              <th>Column 4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1, Cell 1</td>
+              <td>Row 1, Cell 2</td>
+              <td>Row 1, Cell 3</td>
+              <td>Row 1, Cell 4</td>
+            </tr>
+            <tr>
+              <td>Row 2, Cell 1</td>
+              <td>Row 2, Cell 2</td>
+              <td>Row 2, Cell 3</td>
+              <td>Row 2, Cell 4</td>
+            </tr>
+            <tr class="active-row">
+              <td>Row 3, Cell 1</td>
+              <td>Row 3, Cell 2</td>
+              <td>Row 3, Cell 3</td>
+              <td>Row 3, Cell 4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- End tables Section -->
+
+    <!-- Begin Lists Section -->
+    <section id="lists" class="content-section">
+      <h2>Lists</h2>
+
+      <div class="list-demo">
+        <!-- Unordered List -->
+        <div class="list-group">
+          <h3>Unordered List</h3>
+          <ul class="styled-list">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+          </ul>
+        </div>
+
+        <!-- Ordered List -->
+        <div class="list-group">
+          <h3>Ordered List</h3>
+          <ol class="styled-list">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+          </ol>
+        </div>
+
+        <!-- Nested List -->
+        <div class="list-group">
+          <h3>Nested List</h3>
+          <ul class="styled-list">
+            <li>
+              Parent item
+              <ul>
+                <li>Child item 1</li>
+                <li>Child item 2</li>
+                <li>Child item 3</li>
+              </ul>
+            </li>
+            <li>
+              Parent item 2
+              <ul>
+                <li>Child item 1</li>
+                <li>Child item 2</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Description List -->
+        <div class="list-group">
+          <h3>Description List</h3>
+          <dl class="styled-description-list">
+            <dt>HTML</dt>
+            <dd>A markup language for creating web pages.</dd>
+            <dt>CSS</dt>
+            <dd>A style sheet language for designing web pages.</dd>
+            <dt>JavaScript</dt>
+            <dd>A programming language for web development.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <!-- End Lists Section -->
+
+    <!-- Begin BreadCrumbs Section -->
+    <section id="breadcrumbs" class="content-section">
+      <h2>Breadcrumbs</h2>
+
+      <div class="breadcrumb-demo">
+        <!-- Basic Breadcrumb -->
+        <div class="breadcrumb-group">
+          <h3>Basic Breadcrumb</h3>
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Category</a></li>
+              <li class="active">Product</li>
             </ol>
-          </div>
+          </nav>
+        </div>
 
-          <!-- Nested List -->
-          <div class="list-group">
-            <h3>Nested List</h3>
-            <ul class="styled-list">
+        <!-- Hierarchical Breadcrumb -->
+        <div class="breadcrumb-group">
+          <h3>Hierarchical Breadcrumb</h3>
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Reports</a></li>
+              <li><a href="#">Annual</a></li>
+              <li class="active">2024</li>
+            </ol>
+          </nav>
+        </div>
+
+        <!-- Breadcrumb with Icons -->
+        <div class="breadcrumb-group">
+          <h3>Breadcrumb with Icons For Mobile</h3>
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
               <li>
-                Parent item
-                <ul>
-                  <li>Child item 1</li>
-                  <li>Child item 2</li>
-                  <li>Child item 3</li>
-                </ul>
+                <a href="#"><span class="icon">🏠</span> Home</a>
               </li>
               <li>
-                Parent item 2
-                <ul>
-                  <li>Child item 1</li>
-                  <li>Child item 2</li>
-                </ul>
+                <a href="#"><span class="icon">📂</span> Documents</a>
               </li>
-            </ul>
-          </div>
-
-          <!-- Description List -->
-          <div class="list-group">
-            <h3>Description List</h3>
-            <dl class="styled-description-list">
-              <dt>HTML</dt>
-              <dd>A markup language for creating web pages.</dd>
-              <dt>CSS</dt>
-              <dd>A style sheet language for designing web pages.</dd>
-              <dt>JavaScript</dt>
-              <dd>A programming language for web development.</dd>
-            </dl>
-          </div>
+              <li class="active"><span class="icon">📄</span> File</li>
+            </ol>
+          </nav>
         </div>
-      </section>
 
-      <section id="breadcrumbs" class="content-section">
-        <h2>Breadcrumbs</h2>
-
-        <div class="breadcrumb-demo">
-          <!-- Basic Breadcrumb -->
-          <div class="breadcrumb-group">
-            <h3>Basic Breadcrumb</h3>
-            <nav aria-label="Breadcrumb">
-              <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Category</a></li>
-                <li class="active">Product</li>
-              </ol>
-            </nav>
-          </div>
-
-          <!-- Hierarchical Breadcrumb -->
-          <div class="breadcrumb-group">
-            <h3>Hierarchical Breadcrumb</h3>
-            <nav aria-label="Breadcrumb">
-              <ol class="breadcrumb">
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Reports</a></li>
-                <li><a href="#">Annual</a></li>
-                <li class="active">2024</li>
-              </ol>
-            </nav>
-          </div>
-
-          <!-- Breadcrumb with Icons -->
-          <div class="breadcrumb-group">
-            <h3>Breadcrumb with Icons</h3>
-            <nav aria-label="Breadcrumb">
-              <ol class="breadcrumb">
-                <li>
-                  <a href="#"><span class="icon">🏠</span> Home</a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon">📂</span> Documents</a>
-                </li>
-                <li class="active"><span class="icon">📄</span> File</li>
-              </ol>
-            </nav>
-          </div>
-
-          <!-- Disabled Breadcrumb -->
-          <div class="breadcrumb-group">
-            <h3>Breadcrumb with Disabled State</h3>
-            <nav aria-label="Breadcrumb">
-              <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li class="disabled">
-                  <a href="#" aria-disabled="true">Archived</a>
-                </li>
-                <li class="active">Current</li>
-              </ol>
-            </nav>
-          </div>
+        <!-- Disabled Breadcrumb -->
+        <div class="breadcrumb-group">
+          <h3>Breadcrumb with Disabled State</h3>
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li class="disabled">
+                <a href="#" aria-disabled="true">Archived</a>
+              </li>
+              <li class="active">Current</li>
+            </ol>
+          </nav>
         </div>
-      </section>
+      </div>
+    </section>
+    <!-- End BreadCrumbs Section -->
 
-      <section id="toggles" class="content-section">
-        <h2>Toggles</h2>
 
-        <div class="toggle-demo">
-          <!-- Basic Toggle -->
-          <div class="toggle-group">
-            <h3>Basic Toggle</h3>
-            <label class="toggle">
-              <input type="checkbox" />
-              <span class="slider"></span>
-            </label>
-          </div>
+    <!-- Begin Toggles Section -->
+    <section id="toggles" class="content-section">
+      <h2>Toggles</h2>
 
-          <!-- Toggle with Label -->
-          <div class="toggle-group">
-            <h3>Toggle with Label</h3>
-            <label class="toggle">
-              <input type="checkbox" />
-              <span class="slider"></span>
-            </label>
-            <span class="toggle-label">Enable Notifications</span>
-          </div>
-
-          <!-- Disabled Toggle -->
-          <div class="toggle-group">
-            <h3>Disabled Toggle</h3>
-            <label class="toggle">
-              <input type="checkbox" disabled />
-              <span class="slider"></span>
-            </label>
-          </div>
+      <div class="toggle-demo">
+        <!-- Basic Toggle -->
+        <div class="toggle-group">
+          <h3>Basic Toggle</h3>
+          <label class="toggle">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
         </div>
-      </section>
-    </main>
 
-    <script src="script.js"></script>
-  </body>
+        <!-- Toggle with Label -->
+        <div class="toggle-group">
+          <h3>Toggle with Label</h3>
+          <label class="toggle">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+          <span class="toggle-label">Enable Notifications</span>
+        </div>
+
+        <!-- Disabled Toggle -->
+        <div class="toggle-group">
+          <h3>Disabled Toggle</h3>
+          <label class="toggle">
+            <input type="checkbox" disabled />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+    </section>
+    <!-- End Toggles Section -->
+  </main>
+  <footer>
+    <p>&copy; 2024 Can Jet Enterprises | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
